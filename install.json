@@ -1,0 +1,24 @@
+{
+  "run": [
+    {
+      "method": "shell.run",
+      "params": {
+        "message": [
+          "git clone https://github.com/C4illin/ConvertX app"
+        ]
+      }
+    },
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
+        "chain": true,
+        "input": null,
+        "message": [
+          "npm install -g bun",
+          "bun install"
+        ]
+      }
+    }
+  ]
+}
