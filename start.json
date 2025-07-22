@@ -5,11 +5,20 @@
       "method": "shell.run",
       "params": {
         "path": "app",
+        "message": [
+          "mkdir -p data"
+        ]
+      }
+    },
+    {
+      "method": "shell.run",
+      "params": {
+        "path": "app",
         "chain": true,
         "env": {},
         "input": null,
         "message": [
-          "bur run dev"
+          "bun run dev"
         ],
         "on": [
           {
